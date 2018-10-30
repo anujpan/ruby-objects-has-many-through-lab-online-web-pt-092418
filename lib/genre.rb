@@ -23,7 +23,6 @@ class Genre
   
   def artists
     # The Genre class needs an instance method, #artists, that iterates over the genre's collection of songs and collects the artist that owns each song.
-    binding.pry
     Song.all.collect do |x|
       binding.pry
       x.artist.name
