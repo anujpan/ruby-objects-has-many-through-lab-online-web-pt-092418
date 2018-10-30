@@ -18,7 +18,9 @@ class Patient
   end
   
   def appointments
-    
+    Appointment.all.collect do |x|
+      
+    end
   end
   
   def doctors
