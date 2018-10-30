@@ -16,6 +16,7 @@ class Doctor
   
   def new_appointment(patient, date)
     appointment = Appointment.new(date, patient, self)
+    @appointments.push(appointment)
   end
 
   def appointments
