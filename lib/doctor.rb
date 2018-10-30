@@ -26,6 +26,3 @@ class Doctor
     end
   end
 end
-
-
-# The Doctor class needs an instance method, #patients, that iterates over that doctor's appointments and collects the patient that belongs to each appointment.
