@@ -17,6 +17,7 @@ class Patient
     appointment = Appointment.new(doctor, date, self)
     @appointments.push(appointment)
     appointment
+    binding.pry
   end
   
   def doctors
