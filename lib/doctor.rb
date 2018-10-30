@@ -20,12 +20,6 @@ class Doctor
     appointment
   end
 
-  def appointments
-    Appointment.all.find_all do |x|
-      x.doctor === self
-    end
-  end
-  
   def patients
     Appointment.all.collect do |x|
       x.patient
