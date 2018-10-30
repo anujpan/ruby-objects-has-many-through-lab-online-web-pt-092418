@@ -18,7 +18,7 @@ class Patient
   end
   
   def appointments
-    Appointment.all.find do |x|
+    Appointment.all.select do |x|
       x.patient === self
     end
   end
