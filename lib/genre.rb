@@ -16,7 +16,6 @@ class Genre
   
   def songs
     # The Genre class needs an instance method, #songs, that iterates through all songs and finds the songs that belong to that genre.
-    binding.pry
     Song.all.select do |x|
       x.genre = self
     end
