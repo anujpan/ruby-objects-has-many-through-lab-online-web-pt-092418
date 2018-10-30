@@ -12,6 +12,10 @@ class Patient
   def self.all
     @@all
   end
+  
+  def new_appointment(doctor)
+    
+  end
 end
 
 
