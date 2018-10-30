@@ -5,5 +5,7 @@ class Doctor
   
   def initialize(name)
     @name = name
+    
+    @@all.push(self)
   end
 end
