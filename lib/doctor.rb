@@ -19,7 +19,7 @@ class Doctor
 
   def appointments
     Appointment.all.find_all do |x|
-      binding.pry
+      x.doctor === self
     end
   end
   
