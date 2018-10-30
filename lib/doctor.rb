@@ -24,7 +24,9 @@ class Doctor
   end
   
   def patients
-      
+    Appointment.collect do |x|
+      binding.pry
+    end
   end
 end
 
