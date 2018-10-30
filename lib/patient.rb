@@ -21,7 +21,7 @@ class Patient
   
   def doctors
     @appointments.collect do |x| 
-      x.doctor
+      x.doctor.uniq
     end
   end
 end
