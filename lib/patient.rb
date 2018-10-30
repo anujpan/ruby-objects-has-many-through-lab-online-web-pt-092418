@@ -3,8 +3,10 @@ class Patient
   
   @@all = []
   
-  def initialize
+  def initialize(name)
+    @name = name
     
+    @@all.push(self)
   end
   
   def self.all
@@ -12,9 +14,6 @@ class Patient
   end
 end
 
-# The Patient class needs a class variable @@all that begins as an empty array.
-
-# The Patient class needs a class method .all that lists each patient in the class variable.
 
 # A patient is instantiated with a name and be saved in the @@all array.
 
