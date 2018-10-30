@@ -18,7 +18,7 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.find do |x|
+    Appointment.all.find_all do |x|
       binding.pry      
     end
   end
