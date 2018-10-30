@@ -19,7 +19,7 @@ class Patient
   
   def appointments
     Appointment.all.collect do |x|
-      
+      binding.pry
     end
   end
   
