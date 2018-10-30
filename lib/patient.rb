@@ -19,7 +19,7 @@ class Patient
   
   def appointments
     Appointment.all.collect do |x|
-      x === self
+      x if x.Patient === self
     end
   end
   
