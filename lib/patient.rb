@@ -17,7 +17,6 @@ class Patient
     appointment = Appointment.new(date, self, doctor)
     @appointments.push(appointment)
     appointment
-    # binding.pry
   end
   
   def doctors
@@ -26,10 +25,3 @@ class Patient
     end
   end
 end
-
-      # expect(hevydevy.appointments).to include(appointment)
-      # expect(appointment.patient).to eq(hevydevy)
-      
-# The Patient class needs an instance method, #appointments, that iterates through the appointments array and returns appointments that belong to the patient.
-
-# The Patient class needs an instance method, #doctors, that iterates over that patient's appointments and collects the doctor that belongs to each appointment.
