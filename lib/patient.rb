@@ -20,13 +20,6 @@ class Patient
     binding.pry
   end
   
-  def new_appointment(patient, date)
-    appointment = Appointment.new(date, patient, self)
-    @appointments.push(appointment)
-    appointment
-  end
-
-
   def doctors
     @appointments.collect do |x| 
       x.doctor
