@@ -20,7 +20,7 @@ class Patient
   end
   
   def doctors
-    Appointment.all.collect do |x| 
+    @appointments.collect do |x| 
       x.doctor
     end
   end
